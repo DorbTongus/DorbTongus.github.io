@@ -11,44 +11,88 @@
 <body>
 <!-- ===== HEADER ====== -->
 <header>
-	<div class="container">
-	<div class="top-header">
-		<div class="contact-icons">
-			<a href=""><i class="fas fa-envelope-open-text"></i></a>
-			<a href=""><i class="fab fa-instagram"></i></a>
-			<a href=""><i class="fab fa-pinterest"></i></a>
+		<div class="container">
+		<div class="top-header">
+			<div class="contact-icons contact-icons--display contact-icons-top">
+				<a href=""><i class="fas fa-envelope-open-text"></i></a>
+				<a href="https://www.instagram.com/featherthenest.ca/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/featherthenest.ca/?tn-str=k*F" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.pinterest.ca/jfstewart/" target="_blank"><i class="fab fa-pinterest"></i></a>
+			</div>
 		</div>
-	</div>
-	<div class="bottom-header">
-			<img class="logo-top" src="assets/logos/FTN_Logo.png" alt="">
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="services.html">Services</a>
-				</li>
-				<li>
-					<a href="press.html">Press</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-				<li class="active">
-					<a href="blog.html">Blog</a>
-				</li>
-			</ul>
+		<div class="bottom-header">
+			<a href="index.html"><img class="logo-top" src="assets/logos/FTN_Logo.png" alt="Home Page"></a>
+			<nav class="nav--display">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Work</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+					</li>
+					<li>
+						<a href="press.html">Press</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+
+		<nav class="nav--mobile">
+			<a href="index.html" class="nav--mobile__logo">
+				<h3>Feather The Nest</h3>
+				<img class="feather" src="assets/logos/feather.png" alt="">
+			</a>
+			<div class="nav--mobile__menu">
+				<ul>
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Work</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+					</li>
+					<li>
+						<a href="press.html">Press</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+	
+				<div class="contact-icons contact-icons--mobile contact-icons-top">
+					<a href=""><i class="fas fa-envelope-open-text"></i></a>
+					<a href="https://www.instagram.com/featherthenest.ca/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/featherthenest.ca/?tn-str=k*F" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.pinterest.ca/jfstewart/" target="_blank"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+		
+
+			<div class="menu-icon hamburger">
+				<div id="hamburger" class="hamburger-icon">
+					<span class="hamburger-icon__bar"></span>
+					<span class="hamburger-icon__bar"></span>
+					<span class="hamburger-icon__bar"></span>
+					<span class="hamburger-icon__bar"></span>
+				</div>
+			</div>
 		</nav>
-	</div>
-	</div>
-</header>
+	</header>
 <!-- ===== HEADER END -->
 
 <!-- ===== BANNER ===== -->
@@ -113,5 +157,7 @@
 		</div>
 	</footer>
 <!-- ===== FOOTER END ====== -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
