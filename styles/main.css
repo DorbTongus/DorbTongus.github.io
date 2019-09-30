@@ -266,7 +266,17 @@ li a {
 
 .banner-about {
   background-image: url("../assets/images/jennifer.jpg");
-  background-position: top; }
+  background-position: 0px -10vw; }
+
+.about-image-left, .about-image-right {
+  background-size: cover;
+  background-position: center; }
+
+.about-image-left {
+  background-image: url("../assets/images/patio.jpg"); }
+
+.about-image-right {
+  background-image: url("../assets/images/kitchenHero.jpg"); }
 
 .banner-work {
   background-image: url("../assets/projects/bedroomTray.jpg"); }
@@ -336,7 +346,7 @@ li a {
   width: 58%; }
 
 /* 4 col block */
-.four-image-block {
+.four-image-block-top, .four-image-block-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,36 +355,37 @@ li a {
   justify-content: space-between; }
 
 .four-image-block__image {
-  min-height: 200px;
-  width: 23%;
-  background-size: cover; }
+  min-height: 20vw;
+  width: 20vw;
+  background-size: cover;
+  background-position: center; }
 
 .four-image-block img {
   max-width: 100%; }
 
-.four-image-block div:nth-child(1) {
-  background-image: url("../assets/work/frontGarden.jpg"); }
+.four-image-block-top div:nth-child(1) {
+  background-image: url("../assets/images/kitchenHero.jpg"); }
 
-.four-image-block div:nth-child(2) {
+.four-image-block-top div:nth-child(2) {
   background-image: url("../assets/work/frostedTrees.jpg"); }
 
-.four-image-block div:nth-child(3) {
+.four-image-block-top div:nth-child(3) {
   background-image: url("../assets/work/gardenOysters.jpeg"); }
 
-.four-image-block div:nth-child(4) {
+.four-image-block-top div:nth-child(4) {
   background-image: url("../assets/work/woodChair.jpg"); }
 
-.four-image-block div:nth-child(5) {
+.four-image-block-bottom div:nth-child(1) {
   background-image: url("../assets/work/frontFlowerBed.jpg"); }
 
-.four-image-block div:nth-child(6) {
+.four-image-block-bottom div:nth-child(2) {
   background-image: url("../assets/work/swatches.jpg"); }
 
-.four-image-block div:nth-child(7) {
-  background-image: url("../assets/work/flowerPots.jpeg"); }
+.four-image-block-bottom div:nth-child(3) {
+  background-image: url("../assets/work/flowerPots.jpg"); }
 
-.four-image-block div:nth-child(8) {
-  background-image: url("../assets/work/swatches.jpg"); }
+.four-image-block-bottom div:nth-child(4) {
+  background-image: url("../assets/work/table.jpg"); }
 
 /* contact block */
 .contact-block input, .contact-block textarea {
@@ -393,6 +404,22 @@ li a {
 .contact-block label {
   border: 1px solid lightgrey; }
 
+.contact-image {
+  background-image: url("../assets/projects/kitchenOverall.jpg");
+  background-size: cover;
+  background-position: center; }
+
+/* press */
+.press-image-hh {
+  background-image: url("../assets/projects/gardenPatio.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.press-image-sh {
+  background-image: url("../assets/images/kitchenHero.jpg");
+  background-position: center;
+  background-size: cover; }
+
 /* FOOTER */
 footer {
   margin-top: 30px; }
@@ -407,9 +434,16 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   border-top: 1px solid #898989; }
-
-.bottom-footer-contact h3 {
-  font-size: 17px; }
+  .bottom-footer-contact h3 {
+    font-size: 17px; }
+  .bottom-footer-contact a {
+    text-decoration: none; }
+  .bottom-footer-contact a h3 {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .bottom-footer-contact a h3:hover {
+      color: #c1c185; }
 
 .contact-icons-bottom {
   display: -webkit-box;
@@ -480,7 +514,76 @@ footer {
       top: 17px;
       left: 20px; }
       .nav--mobile__logo h3 {
-        margin: 0; } }
+        margin: 0; }
+  .banner {
+    height: 310px; }
+  .banner-about {
+    background-position: center; }
+  .four-image-block-top {
+    padding: 15px 0px; }
+  .bottom-footer-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .project-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .project-images .three-image-block__image {
+      width: 100%;
+      margin-bottom: 15px; } }
+
+@media (max-width: 540px) {
+  .project-images, .block-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .about-image-left {
+    height: 150px;
+    width: 100%; }
+  .about-image-right {
+    height: 150px;
+    width: 100%; }
+  .block-images__block {
+    min-height: 100px;
+    width: 100%; }
+  .two-image-block .block-images__block:first-child {
+    width: 100%;
+    margin-bottom: 15px; }
+  .two-image-block .block-images__block:last-child {
+    width: 100%; }
+  .two-image-block {
+    padding: 0px; }
+  .four-image-block-top, .four-image-block-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0px; }
+  .four-image-block__image {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 15px; }
+  .press-image-hh {
+    width: 100%;
+    height: 300px; }
+  .press-image-sh {
+    width: 100%;
+    height: 300px; }
+  .three-image-block--heading {
+    padding: 30px 0px 0px; } }
 
 /* // *******************
 // HAMBURGER ANIMATION
