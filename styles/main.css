@@ -318,7 +318,7 @@ li a {
   cursor: pointer; }
 
 .project-images div:first-child {
-  background-image: url("../assets/projects/KitchenOverall.jpg"); }
+  background-image: url("../assets/projects/kitchenOverall.jpg"); }
 
 .project-images div:nth-child(2) {
   background-image: url("../assets/images/patio.jpg"); }
