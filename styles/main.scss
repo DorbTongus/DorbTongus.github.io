@@ -198,6 +198,18 @@ li a {
   background-position: 0px -10vw;
 }
 
+.banner-services {
+  background-image: url("../assets/images/patio.jpg");
+}
+
+.banner-press {
+  background-image: url("../assets/projects/kitchenOverall.jpg");
+}
+
+.banner-contact {
+  background-image: url("../assets/projects/bedroomFlowerTwo.jpg");
+}
+
 .about-image-left, .about-image-right {
   background-size: cover;
   background-position: center;
@@ -334,6 +346,18 @@ li a {
 
 .four-image-block-bottom div:nth-child(4) {
   background-image: url("../assets/Work/table.jpg");
+}
+
+.service-images div:nth-child(1) {
+  background-image: url("../assets/images/KitchenHero.jpg");
+}
+
+.service-images div:nth-child(2) {
+  background-image: url("../assets/images/chair.jpg");
+}
+
+.service-images div:nth-child(3) {
+  background-image: url("../assets/images/bedroom.jpg");
 }
 
 /* contact block */
