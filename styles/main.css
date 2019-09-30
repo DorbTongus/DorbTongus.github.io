@@ -367,25 +367,25 @@ li a {
   background-image: url("../assets/images/kitchenHero.jpg"); }
 
 .four-image-block-top div:nth-child(2) {
-  background-image: url("../assets/work/frostedTrees.jpg"); }
+  background-image: url("../assets/Work/frostedTrees.jpg"); }
 
 .four-image-block-top div:nth-child(3) {
-  background-image: url("../assets/work/gardenOysters.jpeg"); }
+  background-image: url("../assets/Work/gardenOysters.jpeg"); }
 
 .four-image-block-top div:nth-child(4) {
-  background-image: url("../assets/work/woodChair.jpg"); }
+  background-image: url("../assets/Work/woodChair.jpg"); }
 
 .four-image-block-bottom div:nth-child(1) {
-  background-image: url("../assets/work/frontFlowerBed.jpg"); }
+  background-image: url("../assets/Work/frontFlowerBed.jpg"); }
 
 .four-image-block-bottom div:nth-child(2) {
-  background-image: url("../assets/work/swatches.jpg"); }
+  background-image: url("../assets/Work/swatches.jpg"); }
 
 .four-image-block-bottom div:nth-child(3) {
-  background-image: url("../assets/work/flowerPots.jpg"); }
+  background-image: url("../assets/Work/flowerPots.jpg"); }
 
 .four-image-block-bottom div:nth-child(4) {
-  background-image: url("../assets/work/table.jpg"); }
+  background-image: url("../assets/Work/table.jpg"); }
 
 /* contact block */
 .contact-block input, .contact-block textarea {
