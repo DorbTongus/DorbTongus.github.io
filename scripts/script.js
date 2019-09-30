@@ -73,5 +73,118 @@ jQuery(document).ready(function( $ ){
 			// 	}
 			// });
 
+			var galleryThumbs1 = new Swiper('#modal-1 .gallery-thumbs', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				slidesPerView: 3,
+				direction: 'vertical',
+				freeMode: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+
+			var galleryTop1 = new Swiper('#modal-1 .gallery-top', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				},
+				thumbs: {
+				swiper: galleryThumbs1
+				}
+			});
+
+			var galleryThumbs2 = new Swiper('#modal-2 .gallery-thumbs', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				slidesPerView: 3,
+				direction: 'vertical',
+				freeMode: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+
+			var galleryTop2 = new Swiper('#modal-2 .gallery-top', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				},
+				thumbs: {
+					swiper: galleryThumbs2
+				}
+			});
+
+			var galleryThumbs3 = new Swiper('#modal-3 .gallery-thumbs', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				slidesPerView: 3,
+				direction: 'vertical',
+				freeMode: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+
+			var galleryTop3 = new Swiper('#modal-3 .gallery-top', {
+				spaceBetween: 10,
+				observer: true,
+				observeParents: true,
+				navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				},
+				thumbs: {
+				swiper: galleryThumbs3
+				}
+			});
+	
+
+			function initSliders() {
+				var win = $(this); //this = window
+				if (win.width() <= 767) { 
+
+					var mobileSwiper = new Swiper('.mobile-slider', {
+						spaceBetween: 10,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});		
+				} else {
+			
+					$('.slider-thumbnail').click(function(){
+						var modalNumber = $(this).data('modal');
+						openModal(modalNumber);
+					});
+		
+					function openModal(number) {
+						var modalClass = '#modal-' + number;
+						$(modalClass).fadeIn();
+						galleryThumbs.update();
+						galleryTop.update();
+					}
+		
+					$('.closer').click(function() {
+						$('.modal').fadeOut();
+					});
+				}
+			}
+
+			$(window).on('load', function(){
+				initSliders();
+			});
+
+			$(window).on('resize', function(){
+				initSliders();
+			});
+
+		
 });
 
