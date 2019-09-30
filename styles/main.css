@@ -280,7 +280,8 @@ li a {
   background-position: 0px -10vw; }
 
 .banner-services {
-  background-image: url("../assets/images/patio.jpg"); }
+  background-image: url("../assets/projects/patioTable.jpg");
+  background-position: 0px -63vw; }
 
 .banner-press {
   background-image: url("../assets/projects/kitchenOverall.jpg"); }
@@ -321,7 +322,7 @@ li a {
   background-image: url("../assets/projects/kitchenOverall.jpg"); }
 
 .project-images div:nth-child(2) {
-  background-image: url("../assets/images/patio.jpg"); }
+  background-image: url("../assets/projects/patioTable.jpg"); }
 
 .project-images div:last-child {
   background-image: url("../assets/images/bedroom.jpg"); }
@@ -390,10 +391,10 @@ li a {
   background-image: url("../assets/Work/frostedTrees.jpg"); }
 
 .four-image-block-top div:nth-child(3) {
-  background-image: url("../assets/Work/gardenOysters.jpeg"); }
+  background-image: url("../assets/projects/patioChairs.jpg"); }
 
 .four-image-block-top div:nth-child(4) {
-  background-image: url("../assets/Work/woodChair.jpg"); }
+  background-image: url("../assets/projects/patioTable.jpg"); }
 
 .four-image-block-bottom div:nth-child(1) {
   background-image: url("../assets/Work/frontFlowerBed.jpg"); }
