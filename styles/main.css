@@ -284,7 +284,7 @@ li a {
   background-position: 0px -63vw; }
 
 .banner-press {
-  background-image: url("../assets/projects/kitchenOverall.jpg"); }
+  background-image: url("../assets/projects/KitchenOverall.jpg"); }
 
 .banner-contact {
   background-image: url("../assets/projects/bedroomFlowerTwo.jpg"); }
@@ -319,7 +319,7 @@ li a {
   cursor: pointer; }
 
 .project-images div:first-child {
-  background-image: url("../assets/projects/kitchenOverall.jpg"); }
+  background-image: url("../assets/projects/KitchenOverall.jpg"); }
 
 .project-images div:nth-child(2) {
   background-image: url("../assets/projects/patioTable.jpg"); }
@@ -435,7 +435,7 @@ li a {
   border: 1px solid lightgrey; }
 
 .contact-image {
-  background-image: url("../assets/projects/kitchenOverall.jpg");
+  background-image: url("../assets/projects/KitchenOverall.jpg");
   background-size: cover;
   background-position: center; }
 
