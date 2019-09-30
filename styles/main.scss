@@ -119,6 +119,19 @@ h1, h2 {
   margin-right:25px;
 }
 
+form button {
+  background-color: white;
+  color: #898989;
+  border: 1px solid #898989;
+  font-family: gill-sans;
+  padding: 7px;
+  padding-top: 9px;
+}
+
+form textarea, form input {
+  font-family: gill-sans;
+}
+
 .fas, .fab {
   font-size: 22px;
   color: #898989;
@@ -490,7 +503,7 @@ footer {
 }
 
 @media (max-width: 540px) {
-  .project-images, .block-images {
+  .service-images, .block-images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -707,6 +720,13 @@ footer {
 .swiper-slide {
   background-size: cover;
   background-position: center;
+}
+
+.swiper-button-next:after {
+  color: #c1c185;
+}
+.swiper-button-prev:after {
+  color: #c1c185;
 }
 .gallery-top {
   width: 70%;
